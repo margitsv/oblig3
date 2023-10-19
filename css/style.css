@@ -1,47 +1,53 @@
-body{
-    font-family: Arial, Helvetica, sans-serif
+/* Setter standard skrifttype for hele nettsiden */
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-#grid-container{
+/* Definerer et grid-container som inneholder header, main og footer */
+#grid-container {
+    width: 100;
     display: grid;
-    grid-template-areas: "header" "main" "footer" ;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:0;
+    row-gap: 1rem;
+}
+
+/* Legger til litt padding til header, main og footer for mellomrom */
+header, main, footer {
     padding: 1rem;
 }
 
-header{
+/* Styler header-seksjonen */
+header {
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 1rem;
-    grid-area: "header";
+    grid-area: header;
 }
 
-#taskbar{
-    display: grid;
-    grid-template-areas: "div";
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-header nav div{
+/* Gjør navigasjonselementene i header til flexbokser som er justert mellomrom og til høyre */
+header nav {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    position: relative;
 }
 
-#logo{
-
-    text-decoration: none;
-}
-
-.navbar{
-    display: none;
-}
-
-main{
+main {
     grid-area: main;
-    padding: 1rem;
 }
 
-footer{
+/* Setter bredden til bilder inni main-seksjonen til 100% */
+main section img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* Endrer grid-malen for bredere skjermer */
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+/* Styler footer-seksjonen i gridet */
+footer {
     grid-area: footer;
 }

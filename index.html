@@ -1,102 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-        <link href="css/fontawesome-free-6.4.2-web.css" rel="stylesheet">
-        <link href="css/fontawesome-free-6.4.2-web/brands.css" rel="stylesheet">
-        <link href="css/fontawesome-free-6.4.2-web/solid.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Landingsside</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Oblig3</title>
+</head>
 
-    <body>
+<body>
+    <header>
+        <!-- Øverste navigasjonsmeny med lenker -->
         <div id="grid-container">
-            <header>
-                <nav>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-bars"></i>
-                    <span id="ham"> Søk </span>
-                    <h1>logo</h1><a href="#" id="logo"></a>
-                    <span>Handlekurv</span>
-
-                    <article>
-                        <ul class="navbar">
-                            <li><a href="søk">søk</a></li>
-                            <li><a href="handlekurv">handlekurv</a></li>
-                        </ul>
-                    </article>
-                </nav>
+             <nav id="overste-header">
+                <span>Søk</span>
+                <a href="#" id="logo">heavenlyshoes</a>
+                <span>Handlekurv</span>
+            </nav>
         </div>
 
-                <nav id="taskbar">     
-                    <h2>Velkommen til nettbutikken</h2>  
-                    <ul>
-                        <li><a href="shop">shop</a></li>
-                        <li><a href="nyheter">nyheter</a></li>
-                        <li><a href="brands">brands</a></li>
-                        <li><a href="salg">salg</a></li>
-                    </ul>
-                </nav>
-
-
-
-        </header>
-
+        <nav id="nav">
+            <ul> <!-- Navigasjonsmeny med lenker -->
+                 <li><a href="#">Shop</a></li>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Salg</a></li>
+            </ul>
+        </nav>
+        <section class="velkommen">
+            <h1>Velkommen til nettbutikken. Lorem ipsum dolor sit amet. Consectetur adipscing elit.</h1>
+        </section>
+    </header>
 
     <main>
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <!-- seksjon 1: flex section popular brands  -->
+        <section id="brands">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+        </section>  
+            <img src="https://placehold.co/400x600" alt="Grå placeholder bilde">
+            <img src="https://placehold.co/400x600" alt="Grå placeholder bilde">
+            <img src="https://placehold.co/400x600" alt="Grå placeholder bilde">
 
-        <!---Seksjon 1--->
-        <section>
-            <img src="#" alt="">
-            <h3>Populære brands</h3>
-            <article> bilder utforsk merke </article>
+        <!-- seksjon 2: flex section popular products -->
+        <section id="products">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
         </section>
-
-        <!---Seksjon 2-->
-        <section>
-           <h3>Populære produkter</h3>
-           <article><p>brand produktnavn pris swipe</p></article>
-        </section>
-
-        </section>
+            <img src="https://placehold.co/400x600" alt="Grå placeholder bilde">  
+            <img src="https://placehold.co/400x600" alt="Grå placeholder bilde">
+            <img src="https://placehold.co/400x600" alt="Grå placeholder bilde">
     </main>
 
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="##">følg oss: instagram facebook</a></li>
-                    <li><a>åpningstider</a></li>
-                    <li><a>adresse</a></li>
-                    <li><a>mandag - lørdag 11-16</a></li>
-                    <li><a>søndag stengt</a></li>
-                <i class="fa-solid fa-splotch"></i>
-                    <li><a>informasjon</a></li>
-                    <li><a href="#">frakt og retur</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">kjøpsvilkår</a></li>
-                </ul>
-            </nav>
-        </footer>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">følg oss: instagram facebook</a></li>
+                <li><a>åpningstider</a></li>
+                <li><a>adresse</a></li>
+                <li><a>mandag - lørdag 11-16</a></li>
+                <li><a>søndag stengt</a></li>
+            </ul>
+            
+            <ul>
+                <li><a>informasjon</a></li>
+                <li><a href="#">frakt og retur</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">kjøpsvilkår</a></li>
+            </ul>
+        </nav>
+    </footer>
 
-        <script>
-            let ham = document.getElementById("ham")
-            let x = document.querySelector(".navbar")
-
-            ham.addEventListener("click", ()=>{
-                console.log("Det klikka")
-
-                if (x.className ==="navbar"){
-                    x.className += " responsive"; 
-                } else {
-                         x.className = "navbar"   
-                        }  
-            })
-
-        </script>
-    
-    </body>
-
-</html>
+</body>
